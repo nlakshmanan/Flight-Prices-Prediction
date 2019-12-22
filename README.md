@@ -1,29 +1,5 @@
-# flight_prediction
+# Flight prices prediction
 
-collect_data_1.py 
-Script to flight prices for  destinations with IATA code 'SFO', 'JFK', 'LAX' and 'BWI' from 'ORD' for departure dates 
-30 Nov 2018 , 10th Dec 2018 and 26 Dec 2018 and 
- 
-collect_data_2.py
-Script to flight prices for  destinations with IATA code 'DXB', 'HYD' and 'MAA' from 'ORD' for departure dates 
-30 Nov 2018 , 10th Dec 2018 and 26 Dec 2018 and 
+The goal of the project is to predict when is the best time to buy an aircraft ticket in order to get the lowest price. In the recent decade, there has been steady increase in number of travels by airway. Millions of people all over the world take flights each day. However, ticket prices vary unexpectedly, sometimes drastically. Depending on various factors like supply-demand, airline increases or decreases fare prices on day to day basis to boost their revenue. But for a commoner, it’s hard to make an estimate of optimal time to buy air tickets considering his lack of sufficient information. Therefore, there is scope for a task to compute if a given time is the best time for a purchase (i.e.  now or wait till certain time when it is expected to drop the lowest) .
 
-parse.py
-Converts JSON data collected form collect_data_1.py and collect_data_2.py into useable features.
-Futher parse.py removes outliers and assigns labels to samples.
-Features used:
-origin
-destination 
-num_hrs_until_flight
-duration_of_flight_in_mins
-num_of_stops
-overnight_flight
-day_of_week_collected
-gross_fare
-airline
-flight_no
-
-
-price.py
-Implements Goibibo API which is called by collect_data_1.py and collect_data_2.py to extract realtime flight price data.
-
+Website: https://flightprediction.weebly.com/
